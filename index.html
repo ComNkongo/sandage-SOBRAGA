@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage SEEG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= container >
+        <h1>NKONGÔ</h1>
+        <h5>Collectif Citoyen pour la Lutte contre la Vie Chère dans l’Ogooué-Maritime</h5>
+    
+        <div class= logo >
+            <img src="img/Logo Final 2.png" alt="Logo de NKONGÔ">
+        </div>
+    
+        <h1>Sondage sur la Société des Brasserie du Gabon (SOBRAGA) Port-Gentil</h1>
+        <h5>Merci de prendre quelques minutes pour répondre à ce sondage. Vos réponses nous aideront à rapipdement rencontrer les responsables de SOBRAGA de Port-Gentil sur la qualité des services fournis.</h5>
+    
+        <form action="https://formspree.io/f/xgvollka" method= POST >
+            <div class= form-group >
+                <h4>1/ Informations générales</h4>
+                <label for= issue >Age</label>
+                <select id= issue  name= "temps d'utilissation" >
+                    <option value= coupure name="18-25 ans ">18-25 ans </option>
+                    <option value= coupure name="26-35 ans ">26-35 ans </option>
+                    <option value= coupure name="36-50 ans ">36-50 ans </option>
+                    <option value= coupure name="plus de 50 ans ">plus de 50 ans </option>
+                </select>
+                <label for= issue >Genre</label>
+                <select id= issue  name= "temps d'utilissation" >
+                    <option value= coupure name="Homme">Homme</option>
+                    <option value= coupure name="Femme ">Femme </option>
+                </select>
+            </div>
+    
+            <div class= form-group >
+                <label for= address >Arrondissement :</label>
+                <input type= text  id= address  name= "Arrondissement de l'éméteur"  placeholder= "votre arrondissement" required>
+            </div>
+    
+            <div class= form-group >
+                <label for= address >Quartier :</label>
+                <input type= text  id= address  name= "Quartier de l'éméteur"  placeholder= "votre quartier" required>
+            </div>
+    
+      
+            <div class= form-group >
+                <h4>Satisfaction des Consommateurs</h4>
+                <label for= consommation>Consommez-vous les produits de SOBRAGA ?</label>
+                <select name="qualite_electricite">
+                    <option value= oui, régulièrement name="Oui, régulièrement">Oui, régulièrement</option>
+                    <option value= Oui, occasionnellement name="Oui, occasionnellement"> Oui, occasionnellement</option>
+                    <option value= Non name="Non">Non</option>
+                </select>
+                <label>Quels types de produits SOBRAGA achetez-vous le plus souvent ? (Plusieurs réponses possibles)</label>
+                <select id= damaged-devices  name= "achats des produits"  multiple>
+                    <option value= Bières (Regab, 33 Export, Castel, Beaufort, Guiness, Booster, etc.) >Bières (Regab, 33 Export, Castel, Beaufort, Guiness, Booster, etc.)</option>
+                    <option value= Boissons gazeuses (Coca-Cola, Fanta, Sprite, etc.) >Boissons gazeuses (Coca-Cola, Fanta, Sprite, etc.)</option>
+                    <option value= Jus (D’jino, Youki, etc.)>Jus (D’jino, Youki, etc.)</option>
+                    <option value= Eau minérale (Andza, Aning’Eau) >Eau minérale (Andza, Aning’Eau)</option>
+                    <option value= Autre >Autre (précisez)</option>
+                </select>
+            </div>
+    
+            <label>Sur une échelle de 1 à 5, comment évaluez-vous la qualité des produits SOBRAGA ?</label>
+            <label>évaluation des produits :</label>
+            <select name="évaluation des produits de 1 à 5">
+                <option>1-Excellente</option>
+                <option>2-Bonne</option>
+                <option>3-Moyenne</option>
+                <option>4-Mauvaise</option>
+                <option>5-Très mauvaise</option>
+            </select>
+            <label>Trouvez-vous les prix des produits SOBRAGA abordables ?</label>
+            <select name="Prix des produits abordables">
+                <option>Oui</option>
+                <option>Nom</option>
+            </select>
+            <div class= form-group >
+                <label for= améliorations >Quelle(s) amélioration(s) aimeriez-vous voir ?</label>
+                <select id= damaged-devices  name= "choix des améliorations"  multiple>
+                    <option value= Qualité des produits >Qualité des produits</option>
+                    <option value= Prix plus accessibles >Prix plus accessibles</option>
+                    <option value= Plus de variétés >Plus de variétés</option>
+                    <option value= Meilleure disponibilité en magasin>Meilleure disponibilité en magasin</option>
+                    <option value= autre >Autre (précisez)</option>
+                </select>
+            </div>
+            <h4>2/ Impact économique et social</h4>
+            <label>Pensez-vous que SOBRAGA contribue au développement économique de Port-Gentil?</label>
+            <select name="participation au développement économique">
+                <option>Oui</option>
+                <option>Nom</option>
+                <option>Je ne sais pas</option>
+            </select>
+            <label>Connaissez-vous des personnes travaillant chez SOBRAGA ?de Port-Gentil?</label>
+            <select name="Connaissance de quelqu'un à SOBRAGA">
+                <option>Oui</option>
+                <option>Nom</option>
+            </select>
+            <label>Selon vous, SOBRAGA offre-t-elle de bonnes conditions de livraison à ses clients ?</label>
+            <select name="Bonnes conditions de livraison">
+                <option>Oui</option>
+                <option>Nom</option>
+                <option>Je ne sais pas</option>
+            </select>
+            <label>SOBRAGA participe-t-elle suffisamment à des actions sociales ou environnementales (ex. : recyclage, soutien aux communautés) ?</label>
+            <select name="participation aux actions sociales">
+                <option>Oui</option>
+                <option>Nom</option>
+                <option>Je ne sais pas</option>
+            </select>
+
+            <h4>3/ Image de la marque</h4>
+            <label>Quelle est votre perception générale de SOBRAGA ?</label>
+            <select name="Image de la marque">
+                <option>Très positive</option>
+                <option>Plutôt positive</option>
+                <option>Neutre</option>
+                <option>Plutôt négative</option>
+                <option>Très négative</option>
+            </select>
+            <label>Selon vous, comment SOBRAGA peut-elle améliorer ces services de livraison ?</label>
+            <select name="évaluation des produits">
+                <option>En permettant à tout type de véhicule de se ravitailler </option>
+                <option>Revoir le montant des cautions</option>
+                <option>En effectuant des livraisons à temps</option>
+                <option>En accompagnant les acteurs économiques Gabonais</option>
+                <op<option value= autre >Autre (précisez)</option>
+            </select>
+            <label>Recommandiez-vous SOBRAGA à votre entourage ?</label>
+            <select name="récommandations des produits">
+                <option>Oui</option>
+                <option>Nom</option>
+            </select>
+            <div class= form-group >
+                <label for= commentaire >Suggestions ou commentaires supplémentaires :</label>
+                <textarea id= comments  name= "commentaires"  rows= 4  placeholder= "Entrez vos commentaires ici!" ></textarea>
+            </div>
+
+            <p>Merci pour votre participation ! Vos réponses nous aideront à mieux comprendre la perception et l’impact de SOBRAGA à Port-Gentil</p>
+            <div class= form-group >
+                <button type= submit >Soumettre</button>
+            </div>
+            <br><br>
+        </form>
+    </div>
+    <footer>
+        &copy LionelConcept | 02/2025 |  lionelconcept1@gmail.com
+    </footer>
+
+</body>
+</html>
